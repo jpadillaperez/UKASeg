@@ -1,0 +1,20 @@
+{
+    "ct": {
+        "heart": "",
+        "lungs": "",
+        "liver": "",
+        "bronchi": "wingsnet"
+    },
+    "mri": {
+        "heart": "",
+        "lungs": "",
+        "liver": "",
+        "bronchi": ""
+    },
+    "pet": {
+        "heart": "",
+        "lungs": "",
+        "liver": "",
+        "bronchi": ""
+    }
+}
