@@ -1,10 +1,6 @@
 import os
-import sys
+import json
 import argparse
-import torch
-import numpy as np
-import nibabel as nib
-import importlib
 import subprocess
 
 def main():

@@ -260,6 +260,8 @@ def main():
                 pred_nii = nib.Nifti1Image(pred, img.affine, img.header)
                 nib.save(pred_nii, os.path.join(current_output_folder, file.split(".")[0]+ "_airway.nii.gz"))
 
+    print("Inference completed")
+
 
 if __name__ == '__main__':
     main()
