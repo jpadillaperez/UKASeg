@@ -1,9 +1,11 @@
 {
     "ct": {
-        "heart": "",
-        "lungs": "",
-        "liver": "",
-        "bronchi": "wingsnet"
+        "bronchi": "wingsnet",
+        "lung_vessels": "totalsegmentator",
+        "cerebral_bleed": "totalsegmentator",
+        "hip_implant": "totalsegmentator",
+        "coronary_arteries": "totalsegmentator",
+        "pleural_pericard_effusion": "totalsegmentator"
     },
     "mri": {
         "heart": "",

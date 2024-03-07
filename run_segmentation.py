@@ -49,6 +49,8 @@ def main():
     # Construct the command to run the model script with python
     command = ['python', model_script, '-input', args.input, '-output', args.output]
 
+    print(f"Running command: {' '.join(command)}")
+
     # Run the model script
     subprocess.run(command, check=True)
 

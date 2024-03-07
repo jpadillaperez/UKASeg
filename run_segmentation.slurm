@@ -7,8 +7,8 @@
 #SBATCH --cpus-per-task=1  # Number of CPUs (Don't use more than 12 per GPU)
 #SBATCH --mem=20G  # Memory in GB (Don't use more than 48G per GPU unless you absolutely need it and know what you are doing)
 
-CURRENT_LOG_DIR=/home/guests/jorge_padilla/code/Augsburg/CommandLineTool/output/logs
-OLD_LOG_DIR=/home/guests/jorge_padilla/code/Augsburg/CommandLineTool/output/logs/previous_logs
+CURRENT_LOG_DIR=/home/guests/jorge_padilla/code/Augsburg/UKASeg/output/logs
+OLD_LOG_DIR=/home/guests/jorge_padilla/code/Augsburg/UKASeg/output/logs/previous_logs
 
 # Move old logs to the new directory except for the current log file
 for file in $CURRENT_LOG_DIR/*.out $CURRENT_LOG_DIR/*.err; do
@@ -22,6 +22,6 @@ source /home/guests/jorge_padilla/miniconda3/etc/profile.d/conda.sh
 
 # activate corresponding environment
 conda deactivate # If you launch your script from a terminal where your environment is already loaded, conda won't activate the environment. This guards against that. Not necessary if you always run this script from a clean terminal
-conda activate WingsNet
+conda activate uka
 
-python run_segmentation.py -modality=ct -organ=bronchi -model=wingsnet -input=demo_dataset -output=output
+python run_segmentation.py -modality=ct -organ=lung_vessels -model=totalsegmentator -input=demo_dataset -output=output
