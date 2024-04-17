@@ -1,0 +1,3 @@
+nibabel==5.2.1
+torch==2.0.1
+TotalSegmentator==2.1.0

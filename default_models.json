@@ -5,7 +5,8 @@
         "cerebral_bleed": "totalsegmentator",
         "hip_implant": "totalsegmentator",
         "coronary_arteries": "totalsegmentator",
-        "pleural_pericard_effusion": "totalsegmentator"
+        "pleural_pericard_effusion": "totalsegmentator",
+        "vertebrae": "payer"
     },
     "mri": {
         "heart": "",

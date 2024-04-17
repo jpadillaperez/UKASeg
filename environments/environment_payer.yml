@@ -1,0 +1,5 @@
+name: payer
+dependencies:
+  - python=3.8
+  - numpy=1.19.4
+  - tensorflow-gpu=2.2.0
